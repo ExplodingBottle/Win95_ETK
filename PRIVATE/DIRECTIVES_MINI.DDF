@@ -1,0 +1,13 @@
+.OPTION EXPLICIT
+
+.Set GenerateInf=ON
+
+.Set ChecksumWidth=4
+
+.Set MaxDiskSize=0
+.Set MaxDiskFileCount=0
+
+.Set MaxDiskSize=2048000
+.Set DiskDirectoryTemplate="..\PRODUCTION"
+.Set UniqueFiles=OFF
+

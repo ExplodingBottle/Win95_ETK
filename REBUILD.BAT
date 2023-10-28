@@ -1,0 +1,25 @@
+@echo off
+rem This tool will rebuild the cab chain.
+
+del WORKSPACE\PRECOPY\LAYOUT.INF
+del WORKSPACE\LAYOUT.INF
+
+echo First pass.
+copy /Y PRIVATE\~REBUILD.1 TEMP.BAT
+
+echo PLACEHOLDER > WORKSPACE\PRECOPY\LAYOUT.INF
+
+call TEMP.BAT
+
+copy /Y WORKSPACE\LAYOUT.INF WORKSPACE\PRECOPY
+
+cscript PRIVATE\LAYOUT_PATCHER.vbs WORKSPACE\PRECOPY\LAYOUT.INF
+
+echo Final pass.
+copy /Y PRIVATE\~REBUILD.2 TEMP.BAT
+
+call TEMP.BAT
+
+del TEMP.BAT
+
+pause

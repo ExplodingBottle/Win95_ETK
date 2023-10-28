@@ -1,0 +1,14 @@
+This file explains the purpose of each folders of this tool.
+===========================================================
+.						The root directory of the tool
+.\EXTRACTED					The directory where all the original files are
+.\MAKECAB					Folder containing the extracted MAKECAB.EXE
+.\PRIVATE					Contains scripts and tools used by the toolkit
+.\PRODUCTION					Contains the files of a new disk
+.\TECHDOCS					Contains some technical documentation
+.\UPDATE					The folder where to place the SP3 update file
+.\WORKSPACE					The root of your workspace
+.\WORKSPACE\CDADD				The additional files that will be copied to the disk
+.\WORKSPACE\MINI				The expanded files of MINI.CAB
+.\WORKSPACE\PRECOPY				The expanded files of PRECOPY*.CAB
+.\WORKSPACE\WIN95				The expanded files of WIN95_*.CAB

@@ -1,0 +1,43 @@
+.OPTION EXPLICIT
+
+.Set InfFileName=LAYOUT.INF
+
+.Set GenerateInf=ON
+
+.Set ChecksumWidth=4
+
+.Set InfHeader7=";LAYOUT.INF"
+.Set InfHeader8=";Modified disk Layout file for Windows 95 Setup"
+.Set InfHeader9=";Copyright (c) 1993-1995 Microsoft Corporation"
+.Set InfHeader10=""
+.Set InfHeader11="[version]"
+.Set InfHeader12="signature=""$CHICAGO$"""
+.Set InfHeader13="SetupClass=BASE"
+.Set InfHeader14=""
+.Set InfHeader15="[DosAppVersion]"
+.Set InfHeader16="; Version specific files should be listed here"
+.Set InfHeader17="emm386.exe,-1,-1"
+.Set InfHeader18="himem.sys,-1,-1"
+.Set InfHeader19="ramdrive.sys,-1,-1"
+.Set InfHeader20="smartdrv.exe,-1,-1"
+
+.Set InfDiskHeader=
+.Set InfDiskLineFormat=
+.Set MaxDiskSize=0
+.Set MaxDiskFileCount=0
+
+.Set InfCabinetHeader="[SourceDisksNames]"
+.Set InfCabinetHeader1="; Cabinet file names and associated disks"
+.Set InfCabinetHeader2="; <cab#> = <disk#>,<cabinet filename>, ID (Unused, must be 0)"
+.Set InfCabinetLineFormat="*cab#*=""Windows 95 CD-ROM"",*cabfile*,0"
+
+.Set InfFileHeader="[SourceDisksFiles]"
+.Set InfFileHeader1=";<file> = <cabinet number>,<subdir>,<filename>,<size>,<checksum>"
+.Set InfFileHeader2=";Note: File is not in a cabinet if cab# is 0"
+.Set InfFileHeader3=""
+.Set InfFileLineFormat="*file*=*cab#*,,*size*,*csum*"
+
+.Set MaxDiskSize=1057280
+.Set DiskDirectoryTemplate="..\PRODUCTION"
+.Set UniqueFiles=OFF
+
